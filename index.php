@@ -160,7 +160,7 @@ $result = $conn->query("SELECT * FROM testimoni ORDER BY id DESC");
 <div class="testimonial-card">
 <div class="testimonial-top">
 <div class="avatar"><?= strtoupper(substr($row['nama'], 0, 1)); ?></div>
-<div><h4><?= htmlspecialchars($row['nama']); ?></h4><small>Peserta Kursus</small></div>
+   <div><h4><?= htmlspecialchars($row['nama']); ?></h4><small><i class="bi bi-clock"></i> <?= date('d M Y, H:i', strtotime($row['tanggal'])); ?> WIB</small></div>
 </div>
 <p>“<?= htmlspecialchars($row['pesan']); ?>”</p>
 <div class="testimonial-actions">
@@ -192,7 +192,7 @@ $result = $conn->query("SELECT * FROM testimoni ORDER BY id DESC");
 <div class="popup-icon"><i class="bi bi-whatsapp"></i></div>
 <strong>Butuh informasi?</strong>
 <p>Yuk konsultasikan jadwal dan paket kursus gitar kamu.</p>
-<a href="https://wa.me/629520361068?text=Halo%20GuitarSpace,%20saya%20ingin%20bertanya%20tentang%20kursus%20gitar." target="_blank" class="popup-button"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
+<a href="https://wa.me/6281234567890?text=Halo%20GuitarSpace,%20saya%20ingin%20bertanya%20tentang%20kursus%20gitar." target="_blank" class="popup-button"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
 </div>
 <button class="whatsapp-button" onclick="toggleWhatsapp()"><i class="bi bi-whatsapp"></i></button>
 </div>
